@@ -1,11 +1,20 @@
+import {useState} from "react";
+import { SpawnMonsterModal } from './Modals.jsx'
 import './styles/Menus.css'
 
 const EnemiesMenu = () => {
-  return (
-    <div>
-      <button>Spawn task monster</button>
-    </div>
-  )
+    const [spawnMonsterModal, setSpawnMonsterModal] = useState(false)
+
+    // nagkaada hin prop nga onCancel kay para ma connect an setSpawnMonsterModal
+    // ha button didto ha Modal
+    // note to self gamita an ternary na "condition && result" kun usa la an resulta
+    // basically an spawnMonsterModal an switch or like an properties ha C# WPF, like an states ha react na work similarly
+    return (
+        <div>
+            <button onClick={() => setSpawnMonsterModal(true)}>Spawn task monster</button>
+            {spawnMonsterModal && <SpawnMonsterModal onCancel={() => setSpawnMonsterModal(false)}/>}
+        </div>
+    )
 }
 
 const TrophiesMenu = () => {
