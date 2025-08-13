@@ -1,0 +1,19 @@
+.sidebar {
+    text-align: center;
+    align-content: center;
+    background-color: #373f47;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+    color: #c3c9e9;
+    text-decoration: none;
+}
+
+.sidebar-link:hover {
+    cursor: pointer;
+    background-color: #c3c9e9;
+    color: #373f47;
+}

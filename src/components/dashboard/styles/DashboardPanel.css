@@ -1,0 +1,14 @@
+.dashboard-panel {
+    background-color: #aaabbc;
+}
+
+.dashboard-panel .dashboard-panel-menu h1 {
+    color: #373f47;
+    text-align: center;
+}
+
+.dashboard-panel .dashboard-panel-content {
+    font-size: 25px;
+    color: #373f47;
+    text-align: center;
+}
