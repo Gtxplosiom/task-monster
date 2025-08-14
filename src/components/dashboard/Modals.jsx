@@ -1,6 +1,8 @@
 import {useState} from "react";
 import './styles/Modals.css'
 
+// TODO: study how tf this works, this spawn of AI yapping
+// kun ma understand mo ini master kana hin react
 const SpawnMonsterModal = ({onCancel}) => {
     const [todoTitle, setTodoTitle] = useState('')
     const [tasks, setTasks] = useState([])
